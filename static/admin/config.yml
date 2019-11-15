@@ -1,16 +1,19 @@
 backend:
   name: git-gateway
   branch: master
-  site_url: https://marta-bra.netlify.com
+
+site_url: https://marta-bra.netlify.com
 media_folder: public/lingerie
+publish_mode: editorial_workflow
+
 collections:
-  - name: "tourInfo"
-    label: "Tour Info"
-    description: "Upcoming tours and their availability"
+  - name: "Catalog"
+    label: "Каталог"
+    description: "Shop marta_bra"
     files:
       - label: "tour"
         name: "Tour"
-        file: "static/tours.json"
+        file: "public/data/tours.json"
         fields:
           - label: "Tour List"
             name: "tourList"
@@ -19,4 +22,3 @@ collections:
               - {label: "Tour Date", name: "date", widget: "datetime"}
               - {label: "Total Places", name: "totalPlaces", widget: "number"}
               - {label: "Filled Places", name: "filledPlaces", widget: "number"}
-              
