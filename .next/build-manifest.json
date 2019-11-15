@@ -4,6 +4,10 @@
     "static/development/dll/dll_617ad7366d650480b823.js.map"
   ],
   "pages": {
+    "/": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/_app": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
@@ -15,6 +19,26 @@
     "/_polyfills": [
       "static/runtime/polyfills.js",
       "static/runtime/polyfills.js.map"
+    ],
+    "/catalog/[name]": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/certificate": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/contacts": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/cooperation": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/index": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }

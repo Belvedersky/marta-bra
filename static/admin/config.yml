@@ -4,26 +4,46 @@ backend:
 
 site_url: https://marta-bra.netlify.com
 media_folder: public/lingerie
+locale: 'ru'
 
 collections:
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - label: 'Home'
+        name: 'home'
+        file: 'public/data/index.json'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'About'
+        name: 'about'
+        file: 'content/about.json'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+        
+
   - name: "Catalog"
     label: "Каталог"
-    description: "Shop marta_bra"
-    create: true
+    description: "Каталог магазина Martabra"
+    create: false
     extension: json
     files:
-      - label: "Catalog"
+      - label: "Каталог"
         name: "Catalog"
-        file: "public/data/data.json"
+        file: "public/data/catalog.json"
         fields:
           - label: "Catalog"
             name: "CatalogList"
             widget: "list"
             fields:
-              - { label: "link", name: "layout", widget: "hidden", default: "complect"}
               - { label: "Название", name: "title", widget: "string"}
               - {label: "Описание", name: "description", widget: "text"}
               - { label: "Стоимость", name: "price", widget: "string" }
               - { label: "Фото", name: "image", widget: "image" }
+      
 
     
