@@ -3,17 +3,17 @@
   "pages": {
     "/": [
       "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.aba0e5b4d8c3df3a78f8.js",
+      "static/chunks/commons.344f09d032aab14db823.js",
       "static/runtime/main-e313b9f7a1c9e26115af.js"
     ],
     "/_app": [
       "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.aba0e5b4d8c3df3a78f8.js",
+      "static/chunks/commons.344f09d032aab14db823.js",
       "static/runtime/main-e313b9f7a1c9e26115af.js"
     ],
     "/_error": [
       "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.aba0e5b4d8c3df3a78f8.js",
+      "static/chunks/commons.344f09d032aab14db823.js",
       "static/runtime/main-e313b9f7a1c9e26115af.js"
     ],
     "/_polyfills": [
@@ -21,27 +21,27 @@
     ],
     "/catalog/[name]": [
       "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.aba0e5b4d8c3df3a78f8.js",
+      "static/chunks/commons.344f09d032aab14db823.js",
       "static/runtime/main-e313b9f7a1c9e26115af.js"
     ],
     "/certificate": [
       "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.aba0e5b4d8c3df3a78f8.js",
+      "static/chunks/commons.344f09d032aab14db823.js",
       "static/runtime/main-e313b9f7a1c9e26115af.js"
     ],
     "/contacts": [
       "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.aba0e5b4d8c3df3a78f8.js",
+      "static/chunks/commons.344f09d032aab14db823.js",
       "static/runtime/main-e313b9f7a1c9e26115af.js"
     ],
     "/cooperation": [
       "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.aba0e5b4d8c3df3a78f8.js",
+      "static/chunks/commons.344f09d032aab14db823.js",
       "static/runtime/main-e313b9f7a1c9e26115af.js"
     ],
     "/index": [
       "static/runtime/webpack-08f7b238829422e3b9b2.js",
-      "static/chunks/commons.aba0e5b4d8c3df3a78f8.js",
+      "static/chunks/commons.344f09d032aab14db823.js",
       "static/runtime/main-e313b9f7a1c9e26115af.js"
     ]
   }
