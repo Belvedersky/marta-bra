@@ -1,12 +1,9 @@
-[
+{
+  "tourList": [
     {
-    "title": "123",
-    "price": "1234",
-    "body": "sdfkldsflsd"
-    },
-    {
-        "title": "456",
-        "price": "1234",
-        "body": "sdfkldsflsd"
-        }
-]
+      "title": "test",
+      "price": "100",
+      "body": "Hello world!"
+    }
+  ]
+}
