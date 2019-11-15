@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import Image from "../components/images";
-import ListMenu from "./listMenu";
+import ListMenu from "../components/listMenu";
 import { TITLE } from "../config";
-import Menu from "./menu";
+import Menu from "../components/menu";
 import { DEVICE } from '../config';
-import Meta from "./meta";
+import Meta from "../components/meta";
 
 
 const BodyContainer = styled.div`

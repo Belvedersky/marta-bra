@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import { withRouter } from 'next/router'
 import { DEVICE } from '../config';
-import ListMenu from './listMenu'
+import ListMenu from '../components/listMenu'
 const ToolBar = props => {
 
   const Menu = styled.div`

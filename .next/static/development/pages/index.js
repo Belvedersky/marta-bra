@@ -77,10 +77,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
 /* harmony import */ var _components_images__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/images */ "./components/images.js");
-/* harmony import */ var _listMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./listMenu */ "./components/listMenu.js");
+/* harmony import */ var _components_listMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/listMenu */ "./components/listMenu.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../config */ "./config.js");
-/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./menu */ "./components/menu.js");
-/* harmony import */ var _meta__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./meta */ "./components/meta.js");
+/* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/menu */ "./components/menu.js");
+/* harmony import */ var _components_meta__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/meta */ "./components/meta.js");
 
 var _jsxFileName = "/Users/belvedersky/Code/next-js/marta-bra/components/body.js";
 
@@ -112,13 +112,13 @@ var Body = function Body(props) {
       lineNumber: 90
     },
     __self: this
-  }, __jsx(_meta__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, __jsx(_components_meta__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 91
     },
     __self: this
-  }), __jsx(_menu__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }), __jsx(_components_menu__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 92
@@ -151,7 +151,7 @@ var Body = function Body(props) {
       lineNumber: 97
     },
     __self: this
-  }, __jsx(_listMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(_components_listMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
     className: "titleMenu",
     __source: {
       fileName: _jsxFileName,
@@ -266,7 +266,7 @@ var Images = function Images(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _ActiveLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ActiveLink */ "./components/ActiveLink.js");
+/* harmony import */ var _components_ActiveLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/ActiveLink */ "./components/ActiveLink.js");
 var _jsxFileName = "/Users/belvedersky/Code/next-js/marta-bra/components/listMenu.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -284,7 +284,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
       lineNumber: 5
     },
     __self: this
-  }, __jsx(_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, __jsx(_components_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     styled: props.style,
     href: "/",
     __source: {
@@ -298,7 +298,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
       lineNumber: 8
     },
     __self: this
-  }, __jsx(_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, __jsx(_components_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     styled: props.style,
     href: "/cooperation",
     __source: {
@@ -312,7 +312,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
       lineNumber: 11
     },
     __self: this
-  }, __jsx(_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, __jsx(_components_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     styled: props.style,
     href: "/certificate",
     __source: {
@@ -326,7 +326,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
       lineNumber: 14
     },
     __self: this
-  }, __jsx(_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, __jsx(_components_ActiveLink__WEBPACK_IMPORTED_MODULE_1__["default"], {
     styled: props.style,
     href: "/contacts",
     __source: {
@@ -357,8 +357,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _toolbar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./toolbar */ "./components/toolbar.js");
-/* harmony import */ var _sideMenu__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./sideMenu */ "./components/sideMenu.js");
+/* harmony import */ var _components_toolbar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/toolbar */ "./components/toolbar.js");
+/* harmony import */ var _components_sideMenu__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/sideMenu */ "./components/sideMenu.js");
 
 
 
@@ -422,7 +422,7 @@ function (_Component) {
       var SideBarOpen = null;
 
       if (this.state.SideBarOpened) {
-        SideBarOpen = __jsx(_sideMenu__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        SideBarOpen = __jsx(_components_sideMenu__WEBPACK_IMPORTED_MODULE_9__["default"], {
           SideBarClose: this.SideBarClickOpen,
           __source: {
             fileName: _jsxFileName,
@@ -432,7 +432,7 @@ function (_Component) {
         });
       }
 
-      return __jsx(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, __jsx(_toolbar__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      return __jsx(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, __jsx(_components_toolbar__WEBPACK_IMPORTED_MODULE_8__["default"], {
         SideBarOpen: this.SideBarClickOpen,
         __source: {
           fileName: _jsxFileName,
@@ -614,10 +614,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _listMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./listMenu */ "./components/listMenu.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _components_listMenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/listMenu */ "./components/listMenu.js");
 
 var _jsxFileName = "/Users/belvedersky/Code/next-js/marta-bra/components/sideMenu.js";
 
@@ -635,34 +633,33 @@ function _templateObject() {
 
 
 
-
-var Side = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject());
+var Side = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
 
 var sideMenu = function sideMenu(props) {
   return __jsx(Side, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 45
     },
     __self: this
   }, __jsx("div", {
     className: "side_list",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 46
     },
     __self: this
-  }, __jsx(_listMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(_components_listMenu__WEBPACK_IMPORTED_MODULE_3__["default"], {
     style: "sidebar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 48
     },
     __self: this
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 49
     },
     __self: this
   }, __jsx("a", {
@@ -670,7 +667,7 @@ var sideMenu = function sideMenu(props) {
     className: "close",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 50
     },
     __self: this
   }, "X")))));
@@ -693,10 +690,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../config */ "./config.js");
-/* harmony import */ var _listMenu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./listMenu */ "./components/listMenu.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../config */ "./config.js");
+/* harmony import */ var _components_listMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/listMenu */ "./components/listMenu.js");
 
 var _jsxFileName = "/Users/belvedersky/Code/next-js/marta-bra/components/toolbar.js";
 
@@ -716,26 +711,25 @@ function _templateObject() {
 
 
 
-
 var ToolBar = function ToolBar(props) {
-  var Menu = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _config__WEBPACK_IMPORTED_MODULE_4__["DEVICE"].laptop, _config__WEBPACK_IMPORTED_MODULE_4__["DEVICE"].tablet);
+  var Menu = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject(), _config__WEBPACK_IMPORTED_MODULE_3__["DEVICE"].laptop, _config__WEBPACK_IMPORTED_MODULE_3__["DEVICE"].tablet);
   return __jsx(Menu, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 96
     },
     __self: this
   }, __jsx("nav", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 97
     },
     __self: this
   }, __jsx("div", {
     className: "flex",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 98
     },
     __self: this
   }, __jsx("img", {
@@ -745,7 +739,7 @@ var ToolBar = function ToolBar(props) {
     alt: "menu",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100
+      lineNumber: 99
     },
     __self: this
   }), __jsx("a", {
@@ -753,28 +747,28 @@ var ToolBar = function ToolBar(props) {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 105
     },
     __self: this
   }, "MARTA BRA"), __jsx("div", {
     className: "space",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 108
     },
     __self: this
   }), __jsx("div", {
     className: "list",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 110
     },
     __self: this
-  }, __jsx(_listMenu__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, __jsx(_components_listMenu__WEBPACK_IMPORTED_MODULE_4__["default"], {
     style: "toolbar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 112
     },
     __self: this
   })))));
@@ -16074,7 +16068,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!***************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fbelvedersky%2FCode%2Fnext-js%2Fmarta-bra%2Fpages%2Findex.js ***!
   \***************************************************************************************************************************************/
@@ -16097,5 +16091,5 @@ module.exports = dll_9aaf654d4f8f592c0a05;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

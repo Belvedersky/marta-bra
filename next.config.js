@@ -1,5 +1,5 @@
 const data = require('./public/data/catalog.json');
-console.log(data)
+// console.log(data)
 module.exports = ({
     // target: 'serverless',
     // exportTrailingSlash: true,
