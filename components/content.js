@@ -13,7 +13,7 @@ const DivContent = styled.div`
     padding-top: 4rem;
     p,a{
         font-size: 1.1rem;
-        color: #000;
+        color: black;
         text-decoration:none;
     }
     h1{
@@ -25,12 +25,14 @@ const DivContent = styled.div`
         align-self: auto;
         width: 360px;
         height: auto;
+        max-height: 400px;
     }
     .content_item{
         order: 0;
         flex: 2 1 auto;
         align-self: auto;
         padding-left: 3rem;
+        max-width: 550px;
 
     }
     @media ${DEVICE.tablet} {

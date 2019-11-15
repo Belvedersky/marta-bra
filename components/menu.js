@@ -6,8 +6,13 @@ import SideBar from "./sideMenu";
 class Menu extends Component  {
 
     state ={
-        SideBarOpened : false
+        SideBarOpened : false,
+        visible: true,
+        
     };
+    componentDidMount() {
+        console.log('window.innerHeight', window.pageYOffset);
+    }
 
     SideBarClickOpen = () => {
         this.setState((prevState)=>{

@@ -2,12 +2,11 @@ import styled from "styled-components";
 import Image from "../components/images";
 import ListMenu from "./listMenu";
 import { TITLE } from "../config";
-import Menu from "./menu"
+import Menu from "./menu";
+import { DEVICE } from '../config';
 import Meta from "./meta";
 
-const Main = styled.div`
-  padding-top: 60px;
-`;
+
 const BodyContainer = styled.div`
 h2,h1 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -17,13 +16,13 @@ h2,h1 {
   font-size:1rem;
   font-weight: 300;
   text-align: center;
-}
-  height: 100%;
-  > html {
+  }
+  html {
+    margin: 0;
+	  padding: 0;
     height: 100%;
   }
-  > body,
-  li {
+  body,li {
     // margin: 0;
     height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
@@ -32,9 +31,7 @@ h2,h1 {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  > h2,
-  a,
-  p {
+  h2,a,p {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
       "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
       "Helvetica Neue", sans-serif;
@@ -60,6 +57,31 @@ h2,h1 {
     margin-left: auto;
     margin-right: auto;
   }
+  @media ${DEVICE.tablet}{
+    .siteMenu{
+      display:none;
+    }
+  }
+  .content-body{
+    padding-top: 60px;
+    padding-bottom: 130px;
+    height: 100%;
+
+  }
+  .Footer{ 
+    position: absolute;
+    left:0;
+    margin-top: 130px;
+    width: 100%;
+    height: 130px;
+    text-align:center;
+    /* background: #575757; */
+    
+    p{
+      color: #575757;
+    }
+
+  }
 `;
 
 const Body = props => {
@@ -68,14 +90,22 @@ const Body = props => {
     <BodyContainer>
       <Meta/>
       <Menu/>
-      <Main>
-      <Image src="/img/bra.png" />
-      <h2> {TITLE.subtitle}</h2>
-      <div className="siteMenu">
-        <ListMenu />
+
+        <div className="content-body">
+          <Image src="/img/bra.png" />
+          <h2> {TITLE.subtitle}</h2>
+          <div className="siteMenu">
+          <ListMenu className="titleMenu" />
+          </div>
+            {props.children}
+        </div>
+        <div className="Footer">
+        <p>Marta bra</p>
+        <p>2019</p>        
       </div>
-        {props.children}
-      </Main>
+
+      
+
     </BodyContainer>
   );
 };

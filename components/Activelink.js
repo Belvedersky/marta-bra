@@ -1,18 +1,26 @@
 import { withRouter } from 'next/router'
 
 const ActiveLink = ({ children, router, href, styled}) => {
+  let link = ["/",router.pathname.split("/")[1]].join("")
+  if (link == "/catalog"){
+    link = "/"
+  }
+
   const style = {
-    color: router.pathname === href ? 'black' : 'grey',
-    textDecoration: "none"
+    color: link === href ? 'black' : 'grey',
+    textDecoration: "none",
+    
+
     
   }
   // console.log(styled)
   if (styled =="toolbar"){
-    style.color = router.pathname === href ? 'white' : 'grey'
+    style.color = link === href ? 'white' : 'grey'
+    
   }
 
   if (styled =="sidebar"){
-    style.color = router.pathname === href ? 'black' : 'grey'
+    style.color = link === href ? 'black' : 'grey'
   }
   const handleClick = e => {
     e.preventDefault()
