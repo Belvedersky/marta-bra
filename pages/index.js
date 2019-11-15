@@ -46,8 +46,12 @@ const StyleCatalog = styled.div`
   
   @media ${DEVICE.tablet} {
         .siteMenu{
-            display:none;
+            display:none; 
         }
+        .catalog-container{
+          padding: 0
+        }
+
   }
   @media ${DEVICE.laptop} {
     .catalog-container{

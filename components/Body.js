@@ -69,9 +69,10 @@ h2,h1 {
 
   }
   .Footer{ 
-    position: absolute;
+    position: relative;
+    bottom: -100%;
     left:0;
-    margin-top: 130px;
+    margin-top: 60px;
     width: 100%;
     height: 130px;
     text-align:center;

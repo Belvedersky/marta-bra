@@ -21,7 +21,7 @@ scrollbar-width: none;
     width:100%;
     height: 100%;
     justify-content: center;
-    padding-top:50%;
+    padding-top:60%;
     flex-direction: column;
     list-style: none;
     display: flex;
@@ -30,7 +30,7 @@ scrollbar-width: none;
     margin: 0.3rem;
 }
 .side_list a{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-decoration: none;
 
 }
