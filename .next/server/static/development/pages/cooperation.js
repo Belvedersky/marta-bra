@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -619,8 +619,7 @@ class Menu extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
     });
   }
 
-  componentDidMount() {
-    console.log('window.innerHeight', window.pageYOffset);
+  componentDidMount() {// console.log('window.innerHeight', window.pageYOffset);
   }
 
   render() {
@@ -3415,7 +3414,7 @@ const Cooperation = () => __jsx(_components_body__WEBPACK_IMPORTED_MODULE_2__["d
 
 /***/ }),
 
-/***/ 5:
+/***/ 6:
 /*!************************************!*\
   !*** multi ./pages/cooperation.js ***!
   \************************************/

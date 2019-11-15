@@ -414,8 +414,7 @@ function (_Component) {
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Menu, [{
     key: "componentDidMount",
-    value: function componentDidMount() {
-      console.log('window.innerHeight', window.pageYOffset);
+    value: function componentDidMount() {// console.log('window.innerHeight', window.pageYOffset);
     }
   }, {
     key: "render",

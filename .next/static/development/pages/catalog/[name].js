@@ -461,8 +461,7 @@ function (_Component) {
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Menu, [{
     key: "componentDidMount",
-    value: function componentDidMount() {
-      console.log('window.innerHeight', window.pageYOffset);
+    value: function componentDidMount() {// console.log('window.innerHeight', window.pageYOffset);
     }
   }, {
     key: "render",
@@ -1380,58 +1379,6 @@ function _assertThisInitialized(self) {
   }
 
   return self;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js ***!
-  \*****************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _asyncToGenerator; });
-/* harmony import */ var _core_js_promise__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
-/* harmony import */ var _core_js_promise__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_promise__WEBPACK_IMPORTED_MODULE_0__);
-
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
-  try {
-    var info = gen[key](arg);
-    var value = info.value;
-  } catch (error) {
-    reject(error);
-    return;
-  }
-
-  if (info.done) {
-    resolve(value);
-  } else {
-    _core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a.resolve(value).then(_next, _throw);
-  }
-}
-
-function _asyncToGenerator(fn) {
-  return function () {
-    var self = this,
-        args = arguments;
-    return new _core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a(function (resolve, reject) {
-      var gen = fn.apply(self, args);
-
-      function _next(value) {
-        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
-      }
-
-      function _throw(err) {
-        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
-      }
-
-      _next(undefined);
-    });
-  };
 }
 
 /***/ }),
@@ -16054,115 +16001,84 @@ module.exports = function(module) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_body__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/body */ "./components/body.js");
-/* harmony import */ var _components_content__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/content */ "./components/content.js");
-/* harmony import */ var _components_images__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/images */ "./components/images.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../config */ "./config.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_7__);
-
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_body__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/body */ "./components/body.js");
+/* harmony import */ var _components_content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/content */ "./components/content.js");
+/* harmony import */ var _components_images__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/images */ "./components/images.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../config */ "./config.js");
 var _jsxFileName = "/Users/belvedersky/Code/next-js/marta-bra/pages/catalog/[name].js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
- // const router = useRouter();
-// console.log(router.query.name);
-// console.log(post);
 
-var Index = function Index(props) {
-  return __jsx(_components_body__WEBPACK_IMPORTED_MODULE_3__["default"], {
+var Index = function Index(_ref) {
+  var item = _ref.item;
+  return __jsx(_components_body__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 12
     },
     __self: this
-  }, __jsx(_components_content__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(_components_content__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 13
     },
     __self: this
-  }, __jsx(_components_images__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    src: props.post.image,
+  }, __jsx(_components_images__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    src: item.image,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 14
     },
     __self: this
   }), __jsx("div", {
     className: "content_item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 15
     },
     __self: this
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 16
     },
     __self: this
-  }, " ", props.post.title), __jsx("p", {
+  }, " ", item.title), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 17
     },
     __self: this
-  }, props.post.description, " "), __jsx("p", {
+  }, item.description, " "), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 18
     },
     __self: this
-  }, " \u0426\u0415\u041D\u0410: ", props.post.price))));
+  }, " \u0426\u0415\u041D\u0410: ", item.price))));
 };
 
-Index.getInitialProps =
-/*#__PURE__*/
-function () {
-  var _ref = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  /*#__PURE__*/
-  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(context) {
-    var post;
-    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            post = _config__WEBPACK_IMPORTED_MODULE_6__["Catalog"].find(function (item) {
-              return item.link === context.query.name;
-            }); // console.log(post);
-
-            return _context.abrupt("return", {
-              post: post
-            });
-
-          case 2:
-          case "end":
-            return _context.stop();
-        }
-      }
-    }, _callee);
-  }));
-
-  return function (_x) {
-    return _ref.apply(this, arguments);
+Index.getInitialProps = function (_ref2) {
+  var query = _ref2.query;
+  var item = _config__WEBPACK_IMPORTED_MODULE_4__["Catalog"].find(function (item) {
+    return item.link === query.name;
+  });
+  return {
+    item: item
   };
-}();
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 5:
+/***/ 2:
 /*!**************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcatalog%2F%5Bname%5D&absolutePagePath=%2FUsers%2Fbelvedersky%2FCode%2Fnext-js%2Fmarta-bra%2Fpages%2Fcatalog%2F%5Bname%5D.js ***!
   \**************************************************************************************************************************************************************************/
@@ -16185,5 +16101,5 @@ module.exports = dll_9aaf654d4f8f592c0a05;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[name].js.map

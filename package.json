@@ -14,8 +14,7 @@
     "dev": "next",
     "build": "next build && next export",
     "start": "serve ./out",
-    "export": "next export",
-    "deploy": "next build && next export"
+    "export": "next export"
   },
   "main": "index.js",
   "devDependencies": {

@@ -461,8 +461,7 @@ function (_Component) {
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Menu, [{
     key: "componentDidMount",
-    value: function componentDidMount() {
-      console.log('window.innerHeight', window.pageYOffset);
+    value: function componentDidMount() {// console.log('window.innerHeight', window.pageYOffset);
     }
   }, {
     key: "render",
@@ -16060,7 +16059,7 @@ var Index = function Index() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /*!********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcertificate&absolutePagePath=%2FUsers%2Fbelvedersky%2FCode%2Fnext-js%2Fmarta-bra%2Fpages%2Fcertificate.js ***!
   \********************************************************************************************************************************************************/
@@ -16083,5 +16082,5 @@ module.exports = dll_9aaf654d4f8f592c0a05;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=certificate.js.map

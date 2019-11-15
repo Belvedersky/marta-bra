@@ -527,8 +527,7 @@ class Menu extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
     });
   }
 
-  componentDidMount() {
-    console.log('window.innerHeight', window.pageYOffset);
+  componentDidMount() {// console.log('window.innerHeight', window.pageYOffset);
   }
 
   render() {

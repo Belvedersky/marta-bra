@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -619,8 +619,7 @@ class Menu extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
     });
   }
 
-  componentDidMount() {
-    console.log('window.innerHeight', window.pageYOffset);
+  componentDidMount() {// console.log('window.innerHeight', window.pageYOffset);
   }
 
   render() {
@@ -3291,8 +3290,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_content__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/content */ "./components/content.js");
 /* harmony import */ var _components_images__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/images */ "./components/images.js");
 /* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../config */ "./config.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/router */ "next/router");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_5__);
 var _jsxFileName = "/Users/belvedersky/Code/next-js/marta-bra/pages/catalog/[name].js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -3300,63 +3297,65 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
- // const router = useRouter();
-// console.log(router.query.name);
-// console.log(post);
 
-const Index = props => __jsx(_components_body__WEBPACK_IMPORTED_MODULE_1__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 17
-  },
-  __self: undefined
-}, __jsx(_components_content__WEBPACK_IMPORTED_MODULE_2__["default"], {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 18
-  },
-  __self: undefined
-}, __jsx(_components_images__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  src: props.post.image,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 19
-  },
-  __self: undefined
-}), __jsx("div", {
-  className: "content_item",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 20
-  },
-  __self: undefined
-}, __jsx("h1", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 21
-  },
-  __self: undefined
-}, " ", props.post.title), __jsx("p", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 22
-  },
-  __self: undefined
-}, props.post.description, " "), __jsx("p", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 23
-  },
-  __self: undefined
-}, " \u0426\u0415\u041D\u0410: ", props.post.price))));
+const Index = ({
+  item
+}) => {
+  return __jsx(_components_body__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, __jsx(_components_content__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, __jsx(_components_images__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    src: item.image,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }), __jsx("div", {
+    className: "content_item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: undefined
+  }, __jsx("h1", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: undefined
+  }, " ", item.title), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }, item.description, " "), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }, " \u0426\u0415\u041D\u0410: ", item.price))));
+};
 
-Index.getInitialProps = async function (context) {
-  const post = _config__WEBPACK_IMPORTED_MODULE_4__["Catalog"].find(item => {
-    return item.link === context.query.name;
-  }); // console.log(post);
-
+Index.getInitialProps = ({
+  query
+}) => {
+  const item = _config__WEBPACK_IMPORTED_MODULE_4__["Catalog"].find(item => {
+    return item.link === query.name;
+  });
   return {
-    post: post
+    item
   };
 };
 
@@ -3364,7 +3363,7 @@ Index.getInitialProps = async function (context) {
 
 /***/ }),
 
-/***/ 8:
+/***/ 5:
 /*!***************************************!*\
   !*** multi ./pages/catalog/[name].js ***!
   \***************************************/

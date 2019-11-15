@@ -11,7 +11,7 @@ class Menu extends Component  {
         
     };
     componentDidMount() {
-        console.log('window.innerHeight', window.pageYOffset);
+        // console.log('window.innerHeight', window.pageYOffset);
     }
 
     SideBarClickOpen = () => {
