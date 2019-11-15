@@ -10,16 +10,19 @@ collections:
   - name: "Catalog"
     label: "Каталог"
     description: "Shop marta_bra"
+    create: true
+    extension: json
     files:
-      - label: "tour"
-        name: "Tour"
+      - label: "Catalog"
+        name: "Catalog"
         file: "public/data/tours.json"
-        create: true
         fields:
-          - label: "Tour List"
+          - label: "Catalog"
             name: "tourList"
             widget: "list"
             fields:
-              - {label: "Tour Date", name: "date", widget: "datetime"}
-              - {label: "Total Places", name: "totalPlaces", widget: "number"}
-              - {label: "Filled Places", name: "filledPlaces", widget: "number"}
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Price", name: "price", widget: "string" }
+              - { label: "Body", name: "body", widget: "string"}
+
+    
