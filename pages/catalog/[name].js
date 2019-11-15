@@ -2,7 +2,7 @@
 import Body from "../../components/Body"
 import Content from "../../components/Content"
 import Image from "../../components/Images"
-import {Catalog} from "../../config"
+import Catalog  from '../../public/data/catalog.json'
 
 
 

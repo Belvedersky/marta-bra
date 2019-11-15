@@ -1,9 +1,9 @@
 import Body from "../components/Body";
-import { DEVICE, Catalog } from "../config";
+import { DEVICE } from "../config";
 import Link from 'next/link';
 import ProgressiveImage from "react-progressive-image";
 import styled from "styled-components";
-
+import Catalog from "../public/data/catalog.json"
 const StyleCatalog = styled.div`
  text-align: center;
   .catalog-container {
