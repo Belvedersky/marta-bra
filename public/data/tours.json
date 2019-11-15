@@ -1,9 +1,14 @@
 {
   "tourList": [
     {
-      "title": "test",
-      "price": "100",
-      "body": "Hello world!"
+      "title": "test2",
+      "price": "50",
+      "body": "Hello!"
+    },
+    {
+      "title": "Some new catalog",
+      "price": "123",
+      "body": "1111111"
     }
   ]
 }
