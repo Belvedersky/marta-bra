@@ -1,4 +1,4 @@
-import Body from "../components/body";
+import Body from "../components/Body";
 import { DEVICE, Catalog } from "../config";
 import Link from 'next/link';
 import ProgressiveImage from "react-progressive-image";

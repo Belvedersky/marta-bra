@@ -1,7 +1,6 @@
-import Image from "../components/images";
-import Body from "../components/body";
-import Content from "../components/content"
-import { DEVICE } from "../config";
+import Image from "../components/Images";
+import Body from "../components/Body";
+import Content from "../components/Content"
 import styled from "styled-components";
 
 const CooperationContent = styled.div`
