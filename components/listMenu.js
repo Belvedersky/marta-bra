@@ -1,4 +1,4 @@
-import ActiveLink from '../components/ActiveLink'
+import ActiveLink from './ActiveLink'
 
 export default (props, style) => (
   <ul>

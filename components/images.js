@@ -3,12 +3,9 @@ import ProgressiveImage from "react-progressive-image"
 
 
 const Images = props => {
-  const ImageContainer = styled.div`
-
-  `
 
     return (
-      <ImageContainer>
+      
         <ProgressiveImage 
         className="titleimage"
         src={props.src}
@@ -18,7 +15,6 @@ const Images = props => {
            <img style={{ filter: loading ? "blur(2px)" : blur(0) }} src={src} className ="catalog_image"  alt="Marta bra" />
         )}
         </ProgressiveImage>
-      </ImageContainer>
     )
   }
   

@@ -1,7 +1,7 @@
 
-import Body from "../../components/body"
-import Content from "../../components/content"
-import Image from "../../components/images"
+import Body from "../../components/Body"
+import Content from "../../components/Content"
+import Image from "../../components/Images"
 import {Catalog} from "../../config"
 
 

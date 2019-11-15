@@ -1,10 +1,8 @@
-import Image from "../components/images";
 import Body from "../components/body";
-import { TITLE, DEVICE, Catalog } from "../config";
+import { DEVICE, Catalog } from "../config";
 import Link from 'next/link';
 import ProgressiveImage from "react-progressive-image";
 import styled from "styled-components";
-import ListMenu from "../components/listMenu";
 
 const StyleCatalog = styled.div`
  text-align: center;

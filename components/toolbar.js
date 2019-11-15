@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { DEVICE } from '../config';
-import ListMenu from '../components/listMenu'
+import ListMenu from './ListMenu'
 const ToolBar = props => {
 
   const Menu = styled.div`

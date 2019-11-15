@@ -1,7 +1,7 @@
 import React,{Component} from 'react'
 
-import ToolBar from "../components/toolbar";
-import SideBar from "../components/sideMenu";
+import ToolBar from "./ToolBar";
+import SideBar from "../components/SideMenu";
 
 class Menu extends Component  {
 
