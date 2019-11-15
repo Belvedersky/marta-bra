@@ -33,10 +33,10 @@ class Menu extends Component  {
                         <SideBar SideBarClose={this.SideBarClickOpen} />
         }
         return (
-        <>
+        <div>
         <ToolBar SideBarOpen={this.SideBarClickOpen}/>
         {SideBarOpen}
-        </>
+        </div>
         )
     };
 };

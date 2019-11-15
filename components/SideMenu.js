@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import ListMenu from './ListMenu'
+import ListMenu from '../components/ListMenu'
 const Side = styled.div`
 position: fixed;
 top: 0;
