@@ -14,6 +14,7 @@ collections:
       - label: "tour"
         name: "Tour"
         file: "public/data/tours.json"
+        create: true
         fields:
           - label: "Tour List"
             name: "tourList"
