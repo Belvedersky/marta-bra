@@ -4,7 +4,6 @@ backend:
 
 site_url: https://marta-bra.netlify.com
 media_folder: public/lingerie
-publish_mode: editorial_workflow
 
 collections:
   - name: "Catalog"
@@ -15,14 +14,16 @@ collections:
     files:
       - label: "Catalog"
         name: "Catalog"
-        file: "public/data/tours.json"
+        file: "public/data/data.json"
         fields:
           - label: "Catalog"
-            name: "tourList"
+            name: "CatalogList"
             widget: "list"
             fields:
-              - { label: "Title", name: "title", widget: "string"}
-              - { label: "Price", name: "price", widget: "string" }
-              - { label: "Body", name: "body", widget: "string"}
+              - { label: "link", name: "layout", widget: "hidden", default: "complect"}
+              - { label: "Название", name: "title", widget: "string"}
+              - {label: "Описание", name: "description", widget: "text"}
+              - { label: "Стоимость", name: "price", widget: "string" }
+              - { label: "Фото", name: "image", widget: "image" }
 
     
