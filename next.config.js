@@ -17,7 +17,7 @@ module.exports = {
     fs.readFile("public/data/data.json", function(err, data) {
       if (err) throw err;
       let catalog = JSON.parse(data);
-      let newCatalog = [];
+      let newCatalog = {"CatalogList":[]};
       // console.log(catalog.CatalogList[0])
       catalog.CatalogList.forEach(item => {
         item.image = "/"+item.image.split("/").splice(2,3).join("/")
@@ -29,7 +29,7 @@ module.exports = {
           page: "/catalog/[name]",
           query: { name: item.link }
         };
-        newCatalog.push(item);
+        newCatalog.CatalogList.push(item);
       });
       fs.writeFile(
         "public/data/catalog/catalog.json",
