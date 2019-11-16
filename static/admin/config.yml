@@ -5,29 +5,47 @@ backend:
     - admin
     - editor
 
-
-site_url: https://marta-bra.netlify.com
+site_url: https://martabra.ru
+display_url: https://martabra.ru
+logo_url: https://your-site.com/img/favicon.png
 media_folder: public/lingerie
 locale: 'ru'
 
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
+
+show_preview_links: false
+
 collections:
-  - name: 'pages'
-    label: 'Pages'
+  - name: 'Pages'
+    description: "Cтраницы на сайте"
+    editor:
+      preview: false
+    label: 'Cтраницы'
     files:
-      - label: 'Home'
+      - label: 'Контакты'
         name: 'home'
-        file: 'public/data/index.json'
+        file: 'public/data/pages/contacts.json'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
-      - label: 'About'
-        name: 'about'
-        file: 'public/data/about.json'
+          - { label: 'Название', name: 'title', widget: 'string' }
+          - { label: 'Текст', name: 'body', widget: 'markdown' }
+
+      - label: 'Сертификат'
+        name: 'home'
+        file: 'public/data/pages/certificate.json'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-          - { label: 'Body', name: 'body', widget: 'markdown' }
+          - { label: 'Название', name: 'title', widget: 'string' }
+          - { label: 'Текст', name: 'body', widget: 'markdown' }
+
+      - label: 'Cотрудничество'
+        name: 'home'
+        file: 'public/data/pages/cooperation.json'
+        fields:
+          - { label: 'Название', name: 'title', widget: 'string' }
+          - { label: 'Текст', name: 'body', widget: 'markdown' }
+          
         
 
   - name: "Catalog"
@@ -35,19 +53,35 @@ collections:
     description: "Каталог магазина Martabra"
     create: false
     extension: json
+    editor:
+      preview: false
     files:
       - label: "Каталог"
         name: "Catalog"
-        file: "public/data/data.json"
+        file: "public/data/catalog/catalog.json"
+        slug: '{{slug}}'
         fields:
-          - label: "Catalog"
+          - label: "Каталог"
             name: "CatalogList"
             widget: "list"
             fields:
               - { label: "Название", name: "title", widget: "string"}
               - {label: "Описание", name: "description", widget: "text"}
-              - { label: "Стоимость", name: "price", widget: "string" }
+              - { label: "Стоимость", name: "price", widget: "number", valueType: "int", default: 0}
+              - {label: "Скидка", name: "sale", widget: "boolean", default: false, required: false}
               - { label: "Фото", name: "image", widget: "image" }
-      
+              - {label: "Фоточки", name: "gallery", widget: "list", required: false,  field: {label: Image, name: image, widget: image}}
 
+      - label: "Блог"
+        name: "Catalog"
+        file: "public/data/blog.json"
+        slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
+        fields:
+          - label: "Blog"
+            name: "blog"
+            widget: "list"
+            fields:
+              - { label: "Название", name: "title", widget: "string"}
+              - {label: "Описание", name: "description", widget: "text"}
+              - {label: "Галерея", name: "photo", widget: "list",  field: {label: Image, name: image, widget: image}}
     

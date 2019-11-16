@@ -3,7 +3,8 @@ import { DEVICE } from "../config";
 import Link from 'next/link';
 import ProgressiveImage from "react-progressive-image";
 import styled from "styled-components";
-import Catalog from "../public/data/catalog.json"
+import Catalog from "../public/data/catalog/catalog.json"
+
 const StyleCatalog = styled.div`
  text-align: center;
   .catalog-container {

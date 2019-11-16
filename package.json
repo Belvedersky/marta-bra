@@ -19,7 +19,8 @@
   },
   "main": "index.js",
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.6"
+    "babel-plugin-styled-components": "^1.10.6",
+    "cyrillic-to-translit-js": "^3.0.1"
   },
   "keywords": [],
   "author": "",

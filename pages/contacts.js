@@ -2,6 +2,7 @@ import Image from "../components/Images"
 import Body from "../components/Body"
 import Content from "../components/Content"
 import {TITLE} from "../config"
+import Page  from "../public/data/index.json"
 
     
 const Index = () => (
@@ -15,7 +16,7 @@ const Index = () => (
       
       <p><a href="https://vk.com/martabraa"> vk</a></p>
       
-      <p> {TITLE.about}
+      <p> {Page.сontacts}
       </p>
       </div>
     </Content>
