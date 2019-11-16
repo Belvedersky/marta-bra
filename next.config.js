@@ -20,7 +20,7 @@ module.exports = {
       let newCatalog = {"CatalogList":[]};
       // console.log(catalog.CatalogList[0])
       catalog.CatalogList.forEach(item => {
-        item.image = "/"+item.image.split("/").splice(2,3).join("/")
+        // item.image = "/"+item.image.split("/").splice(2,3).join("/")
         item.link = cyrillicToTranslit().transform(
           item.title.toLowerCase(),
           "_"

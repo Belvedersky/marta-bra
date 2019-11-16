@@ -26,6 +26,7 @@ Index.getInitialProps = ({ query }) => {
   const item = Catalog.CatalogList.find((item)=>{
     return item.link === query.name;
   })
+  item.image = "/"+item.image.split("/").splice(2,3).join("/")
   return {
     item
   }
