@@ -1,4 +1,3 @@
-const data = require("./public/data/catalog/catalog.json");
 var fs = require("fs");
 var cyrillicToTranslit = require("cyrillic-to-translit-js");
 

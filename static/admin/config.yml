@@ -58,7 +58,7 @@ collections:
     files:
       - label: "Каталог"
         name: "Catalog"
-        file: "public/data/catalog/catalog.json"
+        file: "public/data/data.json"
         slug: '{{slug}}'
         fields:
           - label: "Каталог"
