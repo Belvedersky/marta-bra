@@ -4,3 +4,6 @@ out
 # yarn.lock
 package-lock.json
 .next
+
+# cms
+public/data/catalog/catalog.json

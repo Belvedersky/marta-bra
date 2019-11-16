@@ -23,7 +23,7 @@ const Index = ({item}) => {
     }
 
 Index.getInitialProps = ({ query }) => {
-  const item = Catalog.find((item)=>{
+  const item = Catalog.CatalogList.find((item)=>{
     return item.link === query.name;
   })
   return {
