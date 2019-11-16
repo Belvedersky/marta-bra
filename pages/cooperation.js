@@ -1,11 +1,12 @@
 import Image from "../components/Images";
 import Body from "../components/Body";
-import Content from "../components/Content"
+import Content from "../components/Content";
+import Form from "../components/CooperationForm"
 import styled from "styled-components";
 
 const CooperationContent = styled.div`
 
-  input,textarea{
+  input,textarea,.error{
     font-size: 16px;
     padding: 14px 3%;
     display: block;
@@ -17,7 +18,7 @@ const CooperationContent = styled.div`
   }
   textarea{
     margin-top:1rem;
-    height: 6rem;
+    height: 5rem;
     resize: none;
   }
   button{
@@ -51,12 +52,7 @@ const Cooperation = () => (
           нами, заполните контактные данные и подробно расскажите о вашем
           предложении.
         </p>
-        <p> Почта:</p>
-
-        <input />
-        <p> Cooбщение:</p>
-        <textarea />
-        <button> Отправить</button>
+        <Form/>
         </CooperationContent>
       </div>
     </Content>

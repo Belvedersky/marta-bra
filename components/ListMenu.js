@@ -1,6 +1,6 @@
 import ActiveLink from './ActiveLink'
 
-export default (props, style) => (
+export default (props) => (
   <ul>
     <li>
       <ActiveLink styled={props.style} href='/'>КАТАЛОГ</ActiveLink>

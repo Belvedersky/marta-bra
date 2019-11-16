@@ -1,6 +1,10 @@
 backend:
-  name: git-gateway
-  branch: master
+  name: github
+  repo: Belvedersky/marta-bra
+  accept_roles:
+    - admin
+    - editor
+
 
 site_url: https://marta-bra.netlify.com
 media_folder: public/lingerie
