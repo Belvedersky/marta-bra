@@ -66,7 +66,7 @@ const Index = () => (
     <StyleCatalog>
 
       <div className="catalog-container">
-        {Catalog.map(item => (
+        {Catalog.CatalogList.map(item => (
           <div key={item.title}>
 
             <Link href="/catalog/[name]" as={`/catalog/${item.link}`}>

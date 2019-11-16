@@ -14,7 +14,7 @@ module.exports = {
       "/cooperation": { page: "/cooperation" }
     };
     //const catalog = data;
-    fs.readFile("public/data/data.json", function(err, data) {
+    fs.readFile("public/data/catalog/catalog.json", function(err, data) {
       if (err) throw err;
       let catalog = JSON.parse(data);
       let newCatalog = {"CatalogList":[]};
