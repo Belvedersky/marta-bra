@@ -22,21 +22,21 @@ collections:
         file: 'content/pages/сontacts.json'
         fields:
           - { label: 'Название', name: 'title', widget: 'string' }
-          - { label: 'Текст', name: 'body', widget: 'string' }
+          - { label: 'Текст', name: 'body', widget: 'markdown' }
 
       - label: 'Сертификат'
         name: 'certificate'
         file: 'content/pages/certificate.json'
         fields:
           - { label: 'Название', name: 'title', widget: 'string' }
-          - { label: 'Текст', name: 'body', widget: 'string' }
+          - { label: 'Текст', name: 'body', widget: 'markdown' }
 
       - label: 'Cотрудничество'
         name: 'cooperation'
         file: 'content/pages/cooperation.json'
         fields:
           - { label: 'Название', name: 'title', widget: 'string' }
-          - { label: 'Текст', name: 'body', widget: 'string' }
+          - { label: 'Текст', name: 'body', widget: 'markdown' }
   - label: "Каталог"
     name: "каталог"
     description: "Каталог магазина Martabra"
