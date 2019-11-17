@@ -7,8 +7,7 @@ backend:
 
 site_url: https://martabra.ru
 display_url: https://martabra.ru
-logo_url: /img/favicon.png
-media_folder: static/img
+media_folder: static/image
 locale: 'ru'
 show_preview_links: false
 
@@ -20,21 +19,21 @@ collections:
     files:
       - label: 'Контакты'
         name: 'contacts'
-        file: 'public/data/pages/сontacts.json'
+        file: 'content/pages/сontacts.json'
         fields:
           - { label: 'Название', name: 'title', widget: 'string' }
           - { label: 'Текст', name: 'body', widget: 'string' }
 
       - label: 'Сертификат'
         name: 'certificate'
-        file: 'public/data/pages/certificate.json'
+        file: 'content/pages/certificate.json'
         fields:
           - { label: 'Название', name: 'title', widget: 'string' }
           - { label: 'Текст', name: 'body', widget: 'string' }
 
       - label: 'Cотрудничество'
         name: 'cooperation'
-        file: 'public/data/pages/cooperation.json'
+        file: 'content/pages/cooperation.json'
         fields:
           - { label: 'Название', name: 'title', widget: 'string' }
           - { label: 'Текст', name: 'body', widget: 'string' }
