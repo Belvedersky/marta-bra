@@ -66,12 +66,15 @@ const Index = () => (
     <StyleCatalog>
 
       <div className="catalog-container">
-        {Catalog.CatalogList.map(item => (
+        {Catalog.CatalogList.map(item => {
+          let image = item.image.split("/").splice(2,3).join("/");
+          return(
+          
           <div key={item.title}>
 
             <Link href="/catalog/[name]" as={`/catalog/${item.link}`}>
             <a>
-            <ProgressiveImage src={"/"+item.image.split("/").splice(2,3).join("/")} placeholder={item.image}>
+            <ProgressiveImage src={image} placeholder={image}>
             {(src,loading) => (
               <img style={{ filter: loading ? "blur(2px)" : blur(0) }} src={src} className="catalog_image" alt={item.title} />
             )}
@@ -82,7 +85,8 @@ const Index = () => (
             <p>{item.price}₽ </p>
             
           </div>
-        ))}
+        )}
+      )}
       </div>
     </StyleCatalog>
   </Body>
