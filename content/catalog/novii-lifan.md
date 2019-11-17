@@ -10,6 +10,6 @@ description: >-
   создавать разные образы.
 price: 2600
 sale: false
-image: /public/lingerie/lingerie_1.jpg
+image: /static/image/lingerie_3.jpg
 ---
 

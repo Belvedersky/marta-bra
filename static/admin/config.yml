@@ -8,80 +8,57 @@ backend:
 site_url: https://martabra.ru
 display_url: https://martabra.ru
 logo_url: /img/favicon.png
-media_folder: public/lingerie
+media_folder: static/img
 locale: 'ru'
-
-slug:
-  encoding: "ascii"
-  clean_accents: true
-  sanitize_replacement: "_"
-
 show_preview_links: false
 
 collections:
-  - name: 'Pages'
-    description: "Cтраницы на сайте"
-    editor:
-      preview: false
-    label: 'Cтраницы'
+
+  - name: 'Cтраницы'
+    label: 'Страницы'
+    description: "Страницы на сайте"
     files:
       - label: 'Контакты'
         name: 'contacts'
-        file: 'public/data/pages/contacts.json'
+        file: 'public/data/pages/сontacts.json'
         fields:
           - { label: 'Название', name: 'title', widget: 'string' }
-          - { label: 'Текст', name: 'body', widget: 'markdown' }
+          - { label: 'Текст', name: 'body', widget: 'string' }
 
       - label: 'Сертификат'
         name: 'certificate'
         file: 'public/data/pages/certificate.json'
         fields:
           - { label: 'Название', name: 'title', widget: 'string' }
-          - { label: 'Текст', name: 'body', widget: 'markdown' }
+          - { label: 'Текст', name: 'body', widget: 'string' }
 
       - label: 'Cотрудничество'
         name: 'cooperation'
         file: 'public/data/pages/cooperation.json'
         fields:
           - { label: 'Название', name: 'title', widget: 'string' }
-          - { label: 'Текст', name: 'body', widget: 'markdown' }
-          
-        
-
-  - name: "Catalog"
-    label: "Каталог"
+          - { label: 'Текст', name: 'body', widget: 'string' }
+  - label: "Каталог"
+    name: "каталог"
     description: "Каталог магазина Martabra"
-    create: false
-    extension: json
+    folder: 'content/catalog'
+    create: true
     editor:
       preview: false
-    files:
-      - label: "Каталог"
-        name: "Catalog"
-        file: "public/data/catalog/catalog.json"
-        slug: '{{slug}}'
-        fields:
-          - label: "Каталог"
-            name: "CatalogList"
-            widget: "list"
-            fields:
-              - { label: "Название", name: "title", widget: "string"}
-              - {label: "Описание", name: "description", widget: "text"}
-              - { label: "Стоимость", name: "price", widget: "number", valueType: "int", default: 0}
-              - {label: "Скидка", name: "sale", widget: "boolean", default: false, required: false}
-              - { label: "Фото", name: "image", widget: "image" }
-              - {label: "Фоточки", name: "gallery", widget: "list", required: false,  field: {label: Image, name: image, widget: image}}
+    fields:
+        - { label: "Название", name: "title", widget: "string"}
+        - {label: "Описание", name: "description", widget: "text"}
+        - { label: "Стоимость", name: "price", widget: "number", valueType: "int", default: 0}
+        - {label: "Скидка", name: "sale", widget: "boolean", default: false, required: false}
+        - { label: "Фото", name: "image", widget: "image" }
+        - {label: "Фоточки", name: "gallery", widget: "list", required: false,  field: {label: Image, name: image, widget: image}}
 
-      - label: "Блог"
-        name: "Blog"
-        file: "public/data/blog.json"
-        slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
-        fields:
-          - label: "Blog"
-            name: "blog"
-            widget: "list"
-            fields:
-              - { label: "Название", name: "title", widget: "string"}
-              - {label: "Описание", name: "description", widget: "text"}
-              - {label: "Галерея", name: "photo", widget: "list",  field: {label: Image, name: image, widget: image}}
-    
+  - label: 'Блог'
+    name: 'блог'
+    description: "Блог Martabra"
+    folder: 'content/blog'
+    create: true
+    fields:
+       - { label: "Название", name: "title", widget: "string"}
+       - {label: "Описание", name: "description", widget: "text"}
+       - {label: "Галерея", name: "photo", widget: "list",  field: {label: Image, name: image, widget: image}}

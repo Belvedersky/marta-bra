@@ -1,19 +1,21 @@
-import Body from "../components/Body";
-import { DEVICE } from "../config";
+import Body from "../../components/Body";
+import { DEVICE } from "../../config";
 import React from "react";
 import Link from "next/link";
 import ProgressiveImage from "react-progressive-image";
 import styled from "styled-components";
-const CATALOG = "../content/catalog/";
+const CATALOG = "../../content/catalog/";
 
 const importCatalog = async () => {
+  // https://medium.com/@shawnstern/importing-multiple-markdown-files-into-a-react-component-with-webpack-7548559fce6f
+  // second flag in require.context function is if subdirectories should be searched
   const markdownFiles = require
-    .context("../content/catalog/", false, /\.md$/)
+    .context("../../content/catalog/", false, /\.md$/)
     .keys()
     .map(relativePath => relativePath.substring(2));
   return Promise.all(
     markdownFiles.map(async path => {
-      const markdown = await import(`../content/catalog/${path}`);
+      const markdown = await import(`../../content/catalog/${path}`);
       return { ...markdown, name: path.substring(0, path.length - 3) };
     })
   );
@@ -112,4 +114,9 @@ class Catalog extends React.Component {
   }
 }
 
+// Catalog.getInitialProps =  async static () => {
+//   const catalogList = await importCatalog();
+
+//   return { catalogList };
+// }
 export default Catalog;

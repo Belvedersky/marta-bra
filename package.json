@@ -1,5 +1,6 @@
 {
-  "name": "marta_bra",
+  "name": "martabra.ru",
+  "repository": "https://github.com/Belvedersky/marta-bra.git",
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
@@ -8,7 +9,6 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-progressive-image": "^0.6.0",
-    "serve": "^11.2.0",
     "styled-components": "^4.4.1"
   },
   "scripts": {
@@ -20,9 +20,10 @@
   "main": "index.js",
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.6",
-    "cyrillic-to-translit-js": "^3.0.1"
+    "cyrillic-to-translit-js": "^3.0.1",
+    "frontmatter-markdown-loader": "^3.1.0"
   },
   "keywords": [],
-  "author": "",
+  "author": "Belvedersky <qwink186@icloud.com>",
   "description": ""
 }

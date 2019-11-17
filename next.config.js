@@ -1,48 +1,45 @@
-var fs = require("fs");
-var cyrillicToTranslit = require("cyrillic-to-translit-js");
+const fs = require("fs");
+const cyrillicToTranslit = require("cyrillic-to-translit-js");
+const blogPostsFolder = 'content/catalog';
 
-// console.log(data)
-module.exports = {
-  // target: 'serverless',
-  // exportTrailingSlash: true,
-  exportPathMap: function() {
-    const paths = {
-      "/": { page: "/" },
-      "/catalog": { page: "/" },
-      "/certificate": { page: "/certificate" },
-      "/contacts": { page: "/contacts" },
-      "/cooperation": { page: "/cooperation" }
-    };
-    //const catalog = data;
-    fs.readFile("public/data/catalog/catalog.json", function(err, data) {
-      if (err) throw err;
-      let catalog = JSON.parse(data);
-      let newCatalog = {"CatalogList":[]};
-      // console.log(catalog.CatalogList[0])
-      catalog.CatalogList.forEach(item => {
-        // item.image = "/"+item.image.split("/").splice(2,3).join("/")
-        item.link = cyrillicToTranslit().transform(
-          item.title.toLowerCase(),
-          "_"
-        );
-        paths[`/catalog/${item.link}`] = {
-          page: "/catalog/[name]",
-          query: { name: item.link }
-        };
-        newCatalog.CatalogList.push(item);
-      });
-      fs.writeFile(
-        "public/data/catalog/catalog.json",
-        JSON.stringify(newCatalog),
-        err => {
-          if (err) throw err;
-        }
-      );
-     
+const getPathsForCatalog = () => {
+  return fs.readdirSync(blogPostsFolder)
+  .map(fileName => {
+    const file = cyrillicToTranslit().transform(fileName,"-")
+    const path = file.substring(0, file.length - 3);
+    console.log(path)
+    fs.rename("content/catalog/"+fileName, "content/catalog/"+file,  function (err) {
+        if (err) throw err;
+        console.log(`File ${fileName} \n renamed to ${file} \n` );
     });
-    return paths;
-  },
-  devIndicators: {
-    autoPrerender: false
-  }
+    return {
+        [`/catalog/${path}`]: {
+          page: '/catalog/[name]',
+          query: {
+            name: path,
+          },
+        },
+      };
+    })
+    .reduce((acc, curr) => {
+      return { ...acc, ...curr };
+    }, {});
+}
+
+
+module.exports = {
+    webpack: configuration => {
+        configuration.module.rules.push({
+          test: /\.md$/,
+          use: 'frontmatter-markdown-loader',
+        });
+        return configuration;
+    },
+    async exportPathMap(defaultPathMap) {
+      return {
+        ...defaultPathMap,
+        ...getPathsForCatalog(),
+      };
+    },
 };
+  
