@@ -4,7 +4,6 @@ import React from "react";
 import Link from "next/link";
 import ProgressiveImage from "react-progressive-image";
 import styled from "styled-components";
-const CATALOG = "../content/catalog/";
 
 const importCatalog = async () => {
   const markdownFiles = require
@@ -79,36 +78,42 @@ class Catalog extends React.Component {
     return { Catalog };
   }
   // console.log(catalogList)
-  render(){
-  const { Catalog } = this.props;
-  console.log(Catalog)
-  return(
-  <Body>
-    <StyleCatalog>
-    <div className="catalog-container">
-    {Catalog.map(item => {
-      return (
-        <div key={item.attributes.title}>
+  render() {
+    const { Catalog } = this.props;
 
-            <Link href="/catalog/[name]" as={`/catalog/${item.name}`}>
-            <a>
-            <ProgressiveImage src={item.attributes.image} placeholder={item.attributes.image}>
-            {(src,loading) => (
-              <img style={{ filter: loading ? "blur(2px)" : blur(0) }} src={src} className="catalog_image" alt={item.attributes.title} />
-            )}
-          </ProgressiveImage>
-            <h1>{item.attributes.title}</h1>
-            </a>
-            </Link>
-            <p>{item.attributes.price}₽ </p>
-            
+    return (
+      <Body>
+        <StyleCatalog>
+          <div className="catalog-container">
+            {Catalog.map(item => {
+              return (
+                <div key={item.attributes.title}>
+                  <Link href="/catalog/[name]" as={`/catalog/${item.name}`}>
+                    <a>
+                      <ProgressiveImage
+                        src={item.attributes.image}
+                        placeholder={item.attributes.image}
+                      >
+                        {(src, loading) => (
+                          <img
+                            style={{ filter: loading ? "blur(2px)" : blur(0) }}
+                            src={src}
+                            className="catalog_image"
+                            alt={item.attributes.title}
+                          />
+                        )}
+                      </ProgressiveImage>
+                      <h1>{item.attributes.title}</h1>
+                    </a>
+                  </Link>
+                  <p>{item.attributes.price}₽ </p>
+                </div>
+              );
+            })}
           </div>
-      );
-    })}
-    </div>
-    </StyleCatalog>
-  </Body>
-  );
+        </StyleCatalog>
+      </Body>
+    );
   }
 }
 

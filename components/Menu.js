@@ -12,7 +12,7 @@ class Menu extends Component  {
     };
     componentDidMount() {
         // console.log('window.innerHeight', window.pageYOffset);
-    }
+    };
 
     SideBarClickOpen = () => {
         this.setState((prevState)=>{
@@ -25,7 +25,7 @@ class Menu extends Component  {
         this.setState({
             SideBarOpened : false
         })
-    }
+    };
     render(){
         let SideBarOpen = null;
         if (this.state.SideBarOpened){

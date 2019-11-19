@@ -1,10 +1,42 @@
 import styled from "styled-components";
 import { DEVICE } from '../config';
 import ListMenu from '../components/ListMenu'
+import Cookies from 'js-cookie'
+import { parseCookies } from 'nookies'
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 
 const ToolBar = props => {
+  // let Order = null
+  //   useEffect(() => {
+  //   // Обновляем заголовок документа, используя API браузера
+  //   Order = new Map( JSON.parse(Cookies.get("Order") || null))
+  //   console.log(Order.size)
+  // });
+  const ShowCart = () => {
+    // <p>{OrderList.size} </p>
+    let OrderList = new Map( JSON.parse(Cookies.get("Order") || null))
+    
+    if(OrderList.size){
 
+    return(
+      <Link href="/cart">
+      <a className="shoppingCard" href="/">
+      <img
+          className="bra_catalog"
+          src="/img/shopping-bag.png"
+      />
+      </a>
+      </Link>
+
+    )
+    }
+    else return (null);
+  }
+  const OnAddtoCard=()=>{
+
+  }
   const Menu = styled.div`
     position: fixed;
     background: black;
@@ -48,6 +80,21 @@ const ToolBar = props => {
         margin: 0;
         padding: 0 1rem;
     }
+    .bra_catalog{
+        padding-top:1rem;
+        display: flex;
+        width: 30px;
+        height:auto; 
+        filter: invert(100%);
+        margin: 0;
+       
+        
+    
+    }
+    .shoppingCard{
+      text-decoration: none;
+    }
+    
     .list ul {
       
       margin: 0;
@@ -94,10 +141,13 @@ const ToolBar = props => {
     }
     
   `;
+
+
   return (
     <Menu>
       <nav>
         <div className="flex">
+        
         <img
             onClick={props.SideBarOpen}
             className="menu"
@@ -107,13 +157,18 @@ const ToolBar = props => {
           <a className="logo" href="/">
             MARTA BRA
           </a>
+         
           <div className="space" />
 
           <div className="list">
           
-          <ListMenu style="toolbar"/>
-             
+          <ListMenu styled="toolbar"/>
+
           </div>
+
+         <ShowCart/>
+         
+         {Order}
         </div>
       </nav>
     </Menu>
