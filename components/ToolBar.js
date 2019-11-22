@@ -8,7 +8,7 @@ import Link from 'next/link';
 
 
 const ToolBar = props => {
-  // let Order = null
+  let Order = null
   //   useEffect(() => {
   //   // Обновляем заголовок документа, используя API браузера
   //   Order = new Map( JSON.parse(Cookies.get("Order") || null))
