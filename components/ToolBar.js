@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { DEVICE } from '../config';
 import ListMenu from '../components/ListMenu'
-import Cookies from 'js-cookie'
-import { parseCookies } from 'nookies'
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
@@ -15,24 +13,25 @@ const ToolBar = props => {
   //   console.log(Order.size)
   // });
   const ShowCart = () => {
+    return (null)
     // <p>{OrderList.size} </p>
-    let OrderList = new Map( JSON.parse(Cookies.get("Order") || null))
+    // let OrderList = new Map( JSON.parse(Cookies.get("Order") || null))
     
-    if(OrderList.size){
+    // if(OrderList.size){
 
-    return(
-      <Link href="/cart">
-      <a className="shoppingCard" href="/">
-      <img
-          className="bra_catalog"
-          src="/img/shopping-bag.png"
-      />
-      </a>
-      </Link>
+    // return(
+    //   <Link href="/cart">
+    //   <a className="shoppingCard" href="/">
+    //   <img
+    //       className="bra_catalog"
+    //       src="/img/shopping-bag.png"
+    //   />
+    //   </a>
+    //   </Link>
 
-    )
-    }
-    else return (null);
+    // )
+    // }
+    // else return (null);
   }
   const OnAddtoCard=()=>{
 

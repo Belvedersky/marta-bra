@@ -6,6 +6,9 @@ export default (props) => (
       <ActiveLink styled={props.styled} href='/'>КАТАЛОГ</ActiveLink>
     </li>
     <li>
+      <ActiveLink styled={props.styled} href='/blog'>БЛОГ</ActiveLink>
+    </li>
+    <li>
       <ActiveLink styled={props.styled} href='/cooperation'>СОТРУДНИЧЕСТВО</ActiveLink>
     </li>
     <li>
