@@ -27,13 +27,15 @@ class Index extends Component {
       );
     }
     const data = this.props.blog.default.attributes;
+
+
     console.log(data.photo)
     return (
       <Body>
         <Content>
           <div className="content_item">
             <h1> {data.title}</h1>
-            <p>{data.description} </p>
+            <p>{data.description}</p>
             <p> {data.photo}</p>
           </div>
         </Content>

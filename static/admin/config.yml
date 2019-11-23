@@ -22,6 +22,7 @@ collections:
         file: 'content/pages/сontacts.json'
         fields:
           - { label: 'Название', name: 'title', widget: 'string' }
+          - { label: "Фото", name: "image", widget: "image" }
           - { label: 'Текст', name: 'body', widget: 'markdown' }
 
       - label: 'Сертификат'
@@ -29,6 +30,7 @@ collections:
         file: 'content/pages/certificate.json'
         fields:
           - { label: 'Название', name: 'title', widget: 'string' }
+          - { label: "Фото", name: "image", widget: "image" }
           - { label: 'Текст', name: 'body', widget: 'markdown' }
 
       - label: 'Cотрудничество'
@@ -36,6 +38,7 @@ collections:
         file: 'content/pages/cooperation.json'
         fields:
           - { label: 'Название', name: 'title', widget: 'string' }
+          - { label: "Фото", name: "image", widget: "image" }
           - { label: 'Текст', name: 'body', widget: 'markdown' }
   - label: "Каталог"
     name: "каталог"
@@ -59,5 +62,6 @@ collections:
     create: true
     fields:
        - { label: "Название", name: "title", widget: "string"}
+       - { label: "Фото", name: "image", widget: "image" }
        - {label: "Описание", name: "description", widget: "text"}
        - {label: "Галерея", name: "photo", widget: "list",  field: {label: Image, name: image, widget: image}}
