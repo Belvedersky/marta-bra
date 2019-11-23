@@ -1,5 +1,5 @@
 ---
-title: Basic Mal'va
+title: Basic Mal'va push
 description: ' '
 price: 2350
 sale: false
