@@ -1,5 +1,5 @@
 ---
-title: Basic mal'va
+title: Basic Mal'va
 description: ' '
 price: 2350
 sale: false
