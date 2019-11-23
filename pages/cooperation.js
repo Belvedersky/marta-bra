@@ -37,14 +37,14 @@ const CooperationContent = styled.div`
 
 
 class Cooperation extends Component {
-  static async getInitialProps({ query }) {
-    const path = query.name;
-    const data = await import('../../content/pages/cooperation.json').catch(
-      error => null
-    );
-    return { data };
-  }
-  
+  // static async getInitialProps({ query }) {
+  //   const path = query.name;
+  //   const data = await import('../../content/pages/cooperation.json').catch(
+  //     error => null
+  //   );
+  //   return { data };
+  // }
+
   render() {
     return(
     <Body>
