@@ -19,7 +19,7 @@ collections:
     files:
       - label: 'Контакты'
         name: 'contacts'
-        file: 'content/pages/сontacts.json'
+        file: 'content/pages/сontacts.md'
         fields:
           - { label: 'Название', name: 'title', widget: 'string' }
           - { label: "Фото", name: "image", widget: "image" }
@@ -27,7 +27,7 @@ collections:
 
       - label: 'Сертификат'
         name: 'certificate'
-        file: 'content/pages/certificate.json'
+        file: 'content/pages/certificate.md'
         fields:
           - { label: 'Название', name: 'title', widget: 'string' }
           - { label: "Фото", name: "image", widget: "image" }
@@ -35,7 +35,7 @@ collections:
 
       - label: 'Cотрудничество'
         name: 'cooperation'
-        file: 'content/pages/cooperation.json'
+        file: 'content/pages/cooperation.md'
         fields:
           - { label: 'Название', name: 'title', widget: 'string' }
           - { label: "Фото", name: "image", widget: "image" }
