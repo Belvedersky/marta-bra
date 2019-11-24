@@ -13,7 +13,7 @@ class Contacts extends Component {
   render() {
     const body = this.props.data.html;
     const data = this.props.data.attributes;
-
+    
     return (
       <Body>
         <Content>
