@@ -14,6 +14,14 @@ const DivContent = styled.div`
     h1{
         font-size: 2rem; 
     }
+    .icon{
+        justify-content: center;
+        align-items: center;
+        max-height:35px;
+        width:auto;
+        padding:5px;
+    }
+
     .catalog_image{
         margin: 5px;
         padding: 10px;
@@ -29,7 +37,8 @@ const DivContent = styled.div`
         padding-top: 50px;
         flex: 0 1 auto;
         padding-left: 1rem;
-        max-width: 450px;
+        max-width: 550px;
+        
 
     }
     @media ${DEVICE.tablet} {
@@ -52,9 +61,9 @@ const DivContent = styled.div`
         flex: 2 1 auto;
         align-self: auto;
         padding-left:0;
-        
+        max-width:450px;
     }
-
+    
   }
 `
 const ContentPage = props => {

@@ -12,7 +12,7 @@ const Images = props => {
         placeholder={props.src}
         >
         {(src,loading) => (
-           <img style={{ filter: loading ? "blur(2px)" : blur(0) }} src={src} className ="catalog_image"  alt="Marta bra" />
+           <img style={{ filter: loading ? "blur(2px)" : blur(0) }} src={src} className ={props.style || "catalog_image" } alt="Marta bra" />
         )}
         </ProgressiveImage>
     )

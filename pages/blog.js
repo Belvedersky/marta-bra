@@ -33,7 +33,7 @@ class Blog extends React.Component {
               <Content>
               <Link href="/blog/[name]" as={`/blog/${item.name}`}>
               <a>
-                <Image src={item.attributes.photo[1]} />
+                <Image src={item.attributes.image} />
               </a>
               </Link>
                 <div className="content_item">

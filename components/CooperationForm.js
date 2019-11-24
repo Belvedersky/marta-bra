@@ -51,9 +51,11 @@ export default () => {
           data: inputs
         })
           .then(response => {
+            document.querySelectorAll(".catalog_image")[1].src = "/img/thx.jpg";
+            window.scrollTo(0,0);
             handleServerResponse(
               true,
-              'Спасибо!'
+              null
             )
           })
           .catch(error => {
@@ -87,7 +89,7 @@ export default () => {
             {!status.submitting
                 ? !status.submitted
                 ?   'Отправить'
-                  : 'Отправленно'
+                  : 'Отправлено'
                   : 'Отправляем...'}
             </button>
                 

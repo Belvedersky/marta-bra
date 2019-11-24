@@ -87,7 +87,7 @@ class Catalog extends React.Component {
           <div className="catalog-container">
             {Catalog.map(item => {
               return (
-                <div key={item.attributes.title}>
+                <div key={item.attributes.image}>
                   <Link href="/catalog/[name]" as={`/catalog/${item.name}`}>
                     <a>
                       <ProgressiveImage

@@ -3,17 +3,17 @@ import { SEO } from '../config';
 
 const Meta = () => (
     <Head>
-      <meta name="theme-color" content="#050505"/>
-      <meta name="msapplication-navbutton-color" content="#050505"/>
+      <meta name="theme-color" content="##b69fa8"/>
+      <meta name="msapplication-navbutton-color" content="#b69fa8"/>
       <meta name="apple-mobile-web-app-capable" content="yes"/>
-      <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+      <meta name="apple-mobile-web-app-status-bar-style" content="#b69fa8"/>
       
       <title key="title">{SEO.title}</title>
       
       <link href="/img/favicon.png" rel="icon" />
       <link rel="apple-touch-icon" href="/img/favicon.png"/>
       <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
+      
 
       <meta
         key="description"

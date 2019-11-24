@@ -7,7 +7,7 @@ const ActiveLink = ({ children, router, href, styled}) => {
   }
 
   const style = {
-    color: link === href ? 'black' : 'grey',
+    color: link === href ? '#5b3b3b' : 'grey',
     textDecoration: "none",
     
 
@@ -15,7 +15,7 @@ const ActiveLink = ({ children, router, href, styled}) => {
   }
   // console.log(styled)
   if (styled =="toolbar"){
-    style.color = link === href ? 'white' : 'grey'
+    style.color = link === href ? 'white' : '#5b3b3b'
     
   }
 

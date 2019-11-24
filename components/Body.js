@@ -5,6 +5,7 @@ import { TITLE } from "../config";
 import Menu from "./Menu";
 import { DEVICE } from '../config';
 import Meta from "./Meta";
+import { withRedux } from '../lib/redux'
 
 
 const BodyContainer = styled.div`
@@ -69,18 +70,20 @@ h2,h1 {
 
   }
   .Footer{ 
-    position: relative;
-    bottom: -100%;
+    position: absolute;
     left:0;
     margin-top: 60px;
     width: 100%;
     height: 130px;
     text-align:center;
-    /* background: #575757; */
-    
-    p{
+    background: rgba(226, 217, 220, 0.13);
+    margin-bottom:0;
+  .FooterInfo{
+    padding-top:2rem;
+  }
+    /* p{
       color: #575757;
-    }
+    } */
 
   }
 `;
@@ -101,8 +104,10 @@ const Body = props => {
             {props.children}
         </div>
         <div className="Footer">
+        <div className="FooterInfo">
         <p>Marta bra</p>
-        <p>2019</p>        
+        <p>{new Date().getFullYear()}</p>
+        </div>    
       </div>
 
       
@@ -111,4 +116,5 @@ const Body = props => {
   );
 };
 
-export default Body;
+
+export default withRedux( Body);

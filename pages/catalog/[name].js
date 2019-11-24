@@ -1,8 +1,9 @@
 import Body from "../../components/Body";
 import Content from "../../components/Content";
 import Image from "../../components/Images";
-import AddButton from "../../components/addButton"
-import React, { Component } from "react";
+import AddButton from "../../components/addButton";
+import { withRedux } from '../../lib/redux';
+import { Component } from "react";
 
 class Index extends Component {
 
@@ -47,4 +48,5 @@ class Index extends Component {
   }
 }
 
-export default Index;
+
+export default withRedux( Index);
