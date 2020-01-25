@@ -1,5 +1,7 @@
 const fs = require("fs");
 const cyrillicToTranslit = require("cyrillic-to-translit-js");
+const OpenBrowserPlugin = require("open-browser-webpack-plugin");
+
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 const getPathsForDir = dir => {
@@ -10,10 +12,12 @@ const getPathsForDir = dir => {
     .map(fileName => {
       const file = cyrillicToTranslit().transform(fileName, "-");
       const path = file.substring(0, file.length - 3);
-      const color =  (dir.split("/")[1] === "catalog") ? "\x1b[36m" : "\x1b[35m";
+      const color = dir.split("/")[1] === "catalog" ? "\x1b[36m" : "\x1b[35m";
 
       console.log(
-        `[${color} ${dir.split("/")[1]}\x1b[0m ] https://martabra.ru/${dir.split("/")[1]}/${path}`
+        `[${color} ${dir.split("/")[1]}\x1b[0m ] https://martabra.ru/${
+          dir.split("/")[1]
+        }/${path}`
       );
       fs.rename(dir + "/" + fileName, dir + "/" + file, function(err) {
         if (err) throw err;
@@ -49,6 +53,9 @@ module.exports = withBundleAnalyzer({
       test: /\.md$/,
       use: "frontmatter-markdown-loader"
     });
+    configuration.plugins.push(
+      new OpenBrowserPlugin({ url: "http://localhost:3000" })
+    );
     return configuration;
   },
   async exportPathMap(defaultPathMap) {
