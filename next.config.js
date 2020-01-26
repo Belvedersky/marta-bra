@@ -2,7 +2,6 @@ const fs = require("fs");
 const cyrillicToTranslit = require("cyrillic-to-translit-js");
 const OpenBrowserPlugin = require("open-browser-webpack-plugin");
 
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 const getPathsForDir = dir => {
   console.log(` ${dir.split("/")[1].toUpperCase()} ✨`);

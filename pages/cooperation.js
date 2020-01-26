@@ -1,9 +1,9 @@
-import Image from "../components/Images";
-import Body from "../components/Body";
-import Content from "../components/Content";
-import Form from "../components/CooperationForm";
-import styled from "styled-components";
-import { Component } from "react";
+import Image from '../components/Images';
+import Body from '../components/Body';
+import Content from '../components/Content';
+import Form from '../components/CooperationForm';
+import styled from 'styled-components';
+import { Component } from 'react';
 const CooperationContent = styled.div`
   input,
   textarea,
@@ -25,7 +25,7 @@ const CooperationContent = styled.div`
   button {
     font-size: 16px;
     color: #fff;
-    font-family: "SourceSansPro-SemiBold", Arial, Helvetica, sans-serif;
+    font-family: 'SourceSansPro-SemiBold', Arial, Helvetica, sans-serif;
     height: 40px;
     padding: 0 40px;
     display: inline-block;
@@ -35,7 +35,7 @@ const CooperationContent = styled.div`
     outline: none;
     margin-top: 2rem;
   }
-  button:hover{
+  button:hover {
     background: rgba(155, 101, 101, 0.77);
   }
 `;
@@ -49,7 +49,7 @@ class Cooperation extends Component {
   }
 
   render() {
-    console.log(this.props.data.attributes)
+    console.log(this.props.data.attributes);
     return (
       <Body>
         <Content>

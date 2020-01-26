@@ -26,6 +26,7 @@ h2,h1 {
   body,li {
     // margin: 0;
     height: 100%;
+    
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
       "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
       "Helvetica Neue", sans-serif;
@@ -67,6 +68,7 @@ h2,h1 {
     padding-top: 60px;
     padding-bottom: 130px;
     height: 100%;
+    /* background-color: rgb(251,251,251); */
 
   }
   .Footer{ 
@@ -96,7 +98,7 @@ const Body = props => {
       <Menu/>
 
         <div className="content-body">
-          <Image src="/img/bra.png" />
+          <Image src="/img/logo_marta.jpg" />
           <h2> {TITLE.subtitle}</h2>
           <div className="siteMenu">
           <ListMenu className="titleMenu" />

@@ -1,14 +1,14 @@
-import Body from "../components/Body";
-import Content from "../components/Content";
+import Body from '../components/Body';
+import Content from '../components/Content';
 import { withRedux } from '../lib/redux';
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector, useDispatch } from 'react-redux';
 
 const DeleteItem = () => {
   const dispatch = useDispatch();
   const deleteItem = title => {
     // console.log(item)
     dispatch({
-      type: "DELETEITEM",
+      type: 'DELETEITEM',
       title: title
     });
   };
@@ -16,21 +16,22 @@ const DeleteItem = () => {
 };
 
 const Cart = () => {
-
   const { deleteItem } = DeleteItem();
   const Cart = useSelector(state => state.cart);
-  if (!Cart.size){
-    return(
+  if (!Cart.size) {
+    return (
       <Body>
-      <Content>
-        <div style={{textAlign: "center"}} className="content_item">
-        <img style={{width :"160px", height:"auto"}} src="/img/empty.png" />
-        <h1>В корзине ничего нет!</h1>
-        </div>
-      </Content>
-    </Body>
-      
-    )
+        <Content>
+          <div style={{ textAlign: 'center' }} className="content_item">
+            <img
+              style={{ width: '160px', height: 'auto' }}
+              src="/img/empty.png"
+            />
+            <h1>В корзине ничего нет!</h1>
+          </div>
+        </Content>
+      </Body>
+    );
   }
   let Price = null;
   const CartItem = [];
@@ -43,13 +44,13 @@ const Cart = () => {
           <th> {price.price}руб.</th>
           <td> {price.price * price.lot} руб.</td>
           <td>
-            {" "}
+            {' '}
             <button
               className="delete"
               onClick={() => {
                 deleteItem(title);
               }}
-            ></button>{" "}
+            ></button>{' '}
           </td>
         </tr>
       );

@@ -1,12 +1,12 @@
-import Body from "../components/Body";
-import React from "react";
-import Link from "next/link";
-import Content from "../components/Content";
-import Image from "../components/Images";
+import Body from '../components/Body';
+import React from 'react';
+import Link from 'next/link';
+import Content from '../components/Content';
+import Image from '../components/Images';
 
 const importBlog = async () => {
   const markdownFiles = require
-    .context("../content/blog/", false, /\.md$/)
+    .context('../content/blog/', false, /\.md$/)
     .keys()
     .map(relativePath => relativePath.substring(2));
   return Promise.all(
@@ -31,11 +31,11 @@ class Blog extends React.Component {
           return (
             <div key={item.attributes.title}>
               <Content>
-              <Link href="/blog/[name]" as={`/blog/${item.name}`}>
-              <a>
-                <Image src={item.attributes.image} />
-              </a>
-              </Link>
+                <Link href="/blog/[name]" as={`/blog/${item.name}`}>
+                  <a>
+                    <Image src={item.attributes.image} />
+                  </a>
+                </Link>
                 <div className="content_item">
                   <Link href="/blog/[name]" as={`/blog/${item.name}`}>
                     <a>
@@ -43,12 +43,12 @@ class Blog extends React.Component {
                     </a>
                   </Link>
                   <p>
-                  {item.attributes.description.split(" ").length < 50  &&
-                  item.attributes.description
-                  ||
-                  item.attributes.description.substring(0,item.attributes.description.length / 2.5) + "..."
-                  }
-                    
+                    {(item.attributes.description.split(' ').length < 50 &&
+                      item.attributes.description) ||
+                      item.attributes.description.substring(
+                        0,
+                        item.attributes.description.length / 2.5
+                      ) + '...'}
                   </p>
                 </div>
               </Content>

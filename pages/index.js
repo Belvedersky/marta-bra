@@ -1,13 +1,13 @@
-import Body from "../components/Body";
-import { DEVICE } from "../config";
-import React from "react";
-import Link from "next/link";
-import ProgressiveImage from "react-progressive-image";
-import styled from "styled-components";
+import Body from '../components/Body';
+import { DEVICE } from '../config';
+import React from 'react';
+import Link from 'next/link';
+import ProgressiveImage from 'react-progressive-image';
+import styled from 'styled-components';
 
 const importCatalog = async () => {
   const markdownFiles = require
-    .context("../content/catalog/", false, /\.md$/)
+    .context('../content/catalog/', false, /\.md$/)
     .keys()
     .map(relativePath => relativePath.substring(2));
   return Promise.all(
@@ -96,7 +96,10 @@ class Catalog extends React.Component {
                       >
                         {(src, loading) => (
                           <img
-                            style={{ filter: loading ? "blur(2px)" : blur(0) }}
+                            style={{
+                              filter: loading ? 'blur(2px)' : blur(0),
+                              // border: '1px solid rgb(182,159,168)',
+                            }}
                             src={src}
                             className="catalog_image"
                             alt={item.attributes.title}
