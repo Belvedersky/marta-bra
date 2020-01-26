@@ -7,15 +7,14 @@ import { Component } from 'react';
 
 class Contacts extends Component {
   static async getInitialProps() {
-    const data = await import('../content/pages/certificate.json').catch(
+    const data = await import('../content/pages/certificate.md').catch(
       error => null
     );
     return { data };
   }
   render() {
-    console.log(this.props.data);
-    const body = this.props.data.body;
-    const data = this.props.data;
+    const body = this.props.data.html;
+    const data = this.props.data.attributes;
 
     return (
       <Body>

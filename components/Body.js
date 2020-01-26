@@ -72,8 +72,9 @@ h2,h1 {
 
   }
   .Footer{ 
-    position: absolute;
     left:0;
+    flex: 0 0 auto;
+    bottom: 0;
     margin-top: 60px;
     width: 100%;
     height: 130px;
